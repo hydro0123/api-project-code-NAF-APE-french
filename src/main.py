@@ -3,8 +3,7 @@ import uvicorn
 from colorama import init
 import pandas as pd
 import os
-from services.fonctions_ape import code_ape_get_label
-from services.fonctions_ape import BACH_R11
+from services.fonctions_ape import (code_ape_get_label,BACH_R11,BACH_R28)
 
 files_main=__file__
 dossier_src = os.path.dirname(files_main)
@@ -30,6 +29,10 @@ def Code_APE_Label(Code,NIV):
 @app.get("/R11")
 def Ratio_11_solvabilite(Code,TB,FP):
     return(BACH_R11(Code,TB,FP,table_BACH))
+
+@app.get("/R28")
+def Ratio_28(Code,DU,YQ,YR,YS,CF,CG,EE):
+    return(BACH_R28(Code,DU,YQ,YR,YS,CF,CG,EE,table_BACH))
 
 if __name__ == "__main__":
     init()
