@@ -6,8 +6,12 @@
 - it will create an api, you can open it with the local adress **(default one is: http://127.0.0.1:8000 )** and add /docs; http://127.0.0.1:8000/docs
 
 ## What does this project do?
-At the moment, the project can do one thing;
-- Say the Label/Category of a buisness with the APE Code with the level of precision you want
+At the moment, the project can do 3 things;
+- Get the Label/Category of a buisness with the APE Code *(NAF code in english)* with the level of precision you want
+
+**Ratio below work only for french buisness with 2022 Data;**
+- Get the Ratio 11 BACH `(BANK FOR THE ACCOUNTS OF COMPANIES HARMONIZED / EUROPEAN DATA)` of a buisness in his own category with the code APE `(you need to enter the "Total Bilan"(**EE** in french documents or **A** in BACH Code) and "Fond propres"(**DL** in french or **E** in BACH Code))`
+- Get the Ratio 28 BACH of a buisness in his own category with the APE code `(need to enter data by the code of french documents)`
 
 # **INFORMATION**
 
