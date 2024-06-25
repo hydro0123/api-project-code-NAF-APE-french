@@ -10,11 +10,11 @@ At the moment, the project can do 3 things;
 - Get the Label/Category of a buisness with the APE Code *(NAF code in english)* with the level of precision you want
 
 **Ratio below work only for french buisness with 2022 Data;**
-- Get the Ratio 11 BACH `(BANK FOR THE ACCOUNTS OF COMPANIES HARMONIZED / EUROPEAN DATA)` of a buisness in his own category with the code APE `(you need to enter the "Total Bilan"(**EE** in french documents or **A** in BACH Code) and "Fond propres"(**DL** in french or **E** in BACH Code))`
+- Get the Ratio 11 BACH `(BANK FOR THE ACCOUNTS OF COMPANIES HARMONIZED / EUROPEAN DATA)` of a buisness in his own category with the code APE `(you need to enter the "Total Bilan"(EE in french documents or A in BACH Code) and "Fond propres"(DL in french or E in BACH Code))`
 - Get the Ratio 28 BACH of a buisness in his own category with the APE code `(need to enter data by the code of french documents)`
 
 # **INFORMATION**
-
+### DISCLAMER: ***`french project, you can find untranslated words/code`***
 ## APE Code / NAF Code
  **APE Code** (NAF Code in English) is created by <u>*INSEE/IMSEE*</u> to classify buisness for financial purpose
 
