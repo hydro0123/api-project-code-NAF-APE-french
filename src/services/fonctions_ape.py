@@ -1,6 +1,9 @@
 def code_ape_get_label(code,niv,df):
-    niv="Label NIV"+str(niv)
-    return(df.loc[code,niv])
+    niv=int(niv)
+    niv_index="Label NIV"+str(niv)
+    label=df.loc[code,niv_index]
+    response={"niveau":niv,"label":label}
+    return(response)
 
 def BACH_R11(code,tb,fp,df):
     tb=float(tb)
