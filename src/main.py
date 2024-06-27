@@ -42,10 +42,9 @@ def Ratio_28(Code=Query(...,description="Code APE de l'entreprise."),
              YQ=Query(...,description="engagement de crédit-bail mobilier, code YQ sur liasse fiscale 2050."),
              YR=Query(...,description="engagement de crédit-bail immobilier, code YR sur liasse fiscale 2050."),
              YS=Query(...,description="effets portés a l'escompte et non échus, code YS sur liasse fiscale 2050."),
-             CF=Query(...,description="disponibilités, code CF sur liasse fiscale 2050."),
-             CG=Query(...,description="disponibilités, code CG sur liasse fiscale 2050."),
+             CG=Query(...,description="disponibilités, code CG net sur liasse fiscale 2050."),
              EE=Query(...,description="Total Bilan, code EE sur liasse fiscale 2050.")):
-    return(BACH_R28(Code,DU,YQ,YR,YS,CF,CG,EE,table_BACH))
+    return(BACH_R28(Code,DU,YQ,YR,YS,CG,EE,table_BACH))
 
 if __name__ == "__main__":
     init()
