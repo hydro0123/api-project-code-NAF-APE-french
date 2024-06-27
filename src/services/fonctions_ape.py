@@ -6,10 +6,10 @@ def code_ape_get_label(code,niv,df):
     return(response)
 
 def code_ape_get_all_label(code,df):
-    responses={}
+    responses=[]
     for niv in range(1,6):
         response=code_ape_get_label(code,niv,df)
-        responses[f'response{niv}'] = response
+        responses.append(response)
     return(responses)
 
 def BACH_R11(code,tb,fp,df):
