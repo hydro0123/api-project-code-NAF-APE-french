@@ -3,7 +3,7 @@ import uvicorn
 from colorama import init
 import pandas as pd
 import os
-from services.fonctions_ape import (code_ape_get_label,BACH_R11,BACH_R28)
+from services.fonctions_ape import (code_ape_get_label,code_ape_get_all_label,BACH_R11,BACH_R28)
 
 files_main=__file__
 dossier_src = os.path.dirname(files_main)
@@ -25,6 +25,10 @@ app = FastAPI()
 @app.get("/Code_APE")
 def Code_APE_Label(Code,NIV):
     return(code_ape_get_label(Code,NIV,table_CodeAPE))
+
+@app.get("/Code_APE_all")
+def Code_APE_all_Label(Code):
+    return(code_ape_get_all_label(Code,table_CodeAPE))
 
 @app.get("/R11")
 def Ratio_11_solvabilite(Code=Query(...,description="Code APE de l'entreprise."),
